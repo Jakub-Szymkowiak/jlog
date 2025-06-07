@@ -2,6 +2,12 @@
 name = "jlog-cli"
 version = "0.1.0"
 edition = "2021"
+authors = ["Jakub Szymkowiak <jakub@jakubszymkowiak.com>"]
+description = "Minimalist terminal tool for quickly logging categorized notes with tags, project support, and export options"
+license = "MIT"
+repository = "https://github.com/Jakub-Szymkowiak/jlog"
+homepage = "https://github.com/Jakub-Szymkowiak/jlog"
+readme = "README.md"
 
 [dependencies]
 clap = { version = "4.5", features = ["derive"] }
