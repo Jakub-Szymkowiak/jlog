@@ -3,7 +3,7 @@ mod db;
 
 use clap::{Parser, Subcommand};
 use commands::project::ProjectCommands;
-use commands::{export, import, init, list, log, project, remove, search, show};
+use commands::{export, import, list, log, project, remove, search, show};
 
 #[derive(Parser)]
 #[command(
@@ -17,10 +17,8 @@ struct Cli {
 
 #[derive(Subcommand)]
 enum Commands {
-    #[command(about = "Initialize the jlog database")]
-    Init,
 
-    #[command(about = "Log a message under a category. Usage: jlog <category> <message> [#tags...]")]
+    #[command(about = "Log a message under a category. Usage: qlg <category> <message> [#tags...]")]
     #[command(external_subcommand)]
     Log(Vec<String>),
 
@@ -74,7 +72,6 @@ fn main() {
     let cli = Cli::parse();
 
     match cli.command {
-        Commands::Init => init::run(),
         Commands::Log(args) => log::run(args),
         Commands::List => list::run(),
         Commands::Project { subcommand } => project::run(subcommand),

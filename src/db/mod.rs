@@ -19,5 +19,15 @@ pub fn db_path() -> PathBuf {
 }
 
 pub fn connect() -> Connection {
-    Connection::open(db_path()).expect("Failed to open database")
+    let path = db_path();
+    let first_time = !path.exists();
+
+    fs::create_dir_all(path.parent().unwrap()).expect("failed to create db directory");
+    let conn = Connection::open(path).expect("failed to open db");
+
+    if first_time {
+        crate::db::init::init_db();
+    }
+
+    conn
 }
