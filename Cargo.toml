@@ -1,6 +1,6 @@
 [package]
 name = "jlog-cli"
-version = "0.1.4"
+version = "0.0.1"
 edition = "2021"
 authors = ["Jakub Szymkowiak <jakub@jakubszymkowiak.com>"]
 description = "Minimalist terminal tool for quickly logging categorized notes with tags, project support, and export options"
