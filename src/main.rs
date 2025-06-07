@@ -7,8 +7,8 @@ use commands::{export, import, init, list, log, project, remove, search, show};
 
 #[derive(Parser)]
 #[command(
-    name = "jlog",
-    about = "jlog <category> <message>  — log notes quickly."
+    name = "qlg",
+    about = "Log quick notes. Usage: qlg <category> <message>."
 )]
 struct Cli {
     #[command(subcommand)]

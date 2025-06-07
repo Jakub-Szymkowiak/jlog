@@ -13,9 +13,9 @@ use std::path::PathBuf;
 
 pub fn db_path() -> PathBuf {
     let base = data_dir().expect("Could not resolve user data directory");
-    let dir = base.join("jlog-cli");
-    fs::create_dir_all(&dir).expect("Failed to create jlog-cli data directory");
-    dir.join("jlog.db")
+    let dir = base.join("qlg");
+    fs::create_dir_all(&dir).expect("Failed to create qlg-cli data directory");
+    dir.join("qlg.db")
 }
 
 pub fn connect() -> Connection {

@@ -291,18 +291,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4a5f13b858c8d314ee3e8f639011f7ccefe71f97f96e50151fb991f267928e2c"
 
 [[package]]
-name = "jlog-cli"
-version = "0.0.1"
-dependencies = [
- "chrono",
- "clap",
- "dirs",
- "rusqlite",
- "serde",
- "serde_json",
-]
-
-[[package]]
 name = "js-sys"
 version = "0.3.77"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -390,6 +378,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "02b3e5e68a3a1a02aad3ec490a98007cbc13c37cbe84a3cd7b8e406d76e7f778"
 dependencies = [
  "unicode-ident",
+]
+
+[[package]]
+name = "qlg"
+version = "0.0.1"
+dependencies = [
+ "chrono",
+ "clap",
+ "dirs",
+ "rusqlite",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]

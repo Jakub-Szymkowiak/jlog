@@ -1,9 +1,9 @@
-# jlog
+# qlg
 
-**jlog** is a simple terminal-based note logger built in Rust.  
+**qlg** (*quick log*) is a simple terminal-based note logger built in Rust.  
 
 ## Installation
 
 ```bash
-cargo install jlog-cli
+cargo install qlg
 ```
