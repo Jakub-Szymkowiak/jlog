@@ -5,8 +5,8 @@ edition = "2021"
 authors = ["Jakub Szymkowiak <jakub@jakubszymkowiak.com>"]
 description = "Minimalist terminal tool for quickly logging categorized notes with tags, project support, and export options"
 license = "MIT"
-repository = "https://github.com/Jakub-Szymkowiak/jlog"
-homepage = "https://github.com/Jakub-Szymkowiak/jlog"
+repository = "https://github.com/Jakub-Szymkowiak/glg"
+homepage = "https://github.com/Jakub-Szymkowiak/glg"
 readme = "README.md"
 
 [dependencies]
